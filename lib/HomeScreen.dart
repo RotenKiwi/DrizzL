@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'DrizzLViewPhone.dart';
+import 'DrizzLViewWatch.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -16,11 +18,11 @@ class _HomeState extends State<Home> {
 
         //Watch-Size
         if(constraints.maxWidth < 400)
-          return DrizzLViewWatch(this);
+          return DrizzLViewWatch();
 
         //Phone-Size
         else
-          return DrizzLViewPhone(this);
+          return DrizzLViewPhone();
       },
     );
   }
