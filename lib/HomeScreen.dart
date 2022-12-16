@@ -10,6 +10,18 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        debugPrint('Host Device screen width is ${constraints.maxWidth}');
+
+        //Watch-Size
+        if(constraints.maxWidth < 400)
+          return DrizzLViewWatch(this);
+
+        //Phone-Size
+        else
+          return DrizzLViewPhone(this);
+      },
+    );
   }
 }
