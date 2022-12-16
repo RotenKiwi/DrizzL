@@ -14,7 +14,16 @@ class _DrizzLViewWatchState extends State<DrizzLViewWatch> {
     return Container(
       color: Colors.white,
       child: Stack(
+        alignment: Alignment.center,
         children: <Widget>[
+          Positioned(
+            bottom:  size.height*0.28,
+            left: 0,
+            child: Image.asset(
+              'assets/images/buildings.png',
+              width: size.width * 0.8,
+            ),
+          ),
           Positioned(
             bottom: 0,
             //top: size.height,
