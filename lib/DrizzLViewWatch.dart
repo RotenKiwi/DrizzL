@@ -1,4 +1,6 @@
+
 import 'package:flutter/material.dart';
+import 'package:weather_animation/weather_animation.dart';
 
 class DrizzLViewWatch extends StatefulWidget {
   const DrizzLViewWatch({Key? key}) : super(key: key);
@@ -10,21 +12,14 @@ class DrizzLViewWatch extends StatefulWidget {
 class _DrizzLViewWatchState extends State<DrizzLViewWatch> {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    MediaQueryData media = MediaQuery.of(context);
+    var size = media.size;
     return Container(
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            Color(0xff2f2cc7),
-            Color(0xff561775),
-          ],
-        ),
-      ),
+      color: Colors.cyan,
       child: Stack(
         alignment: Alignment.center,
         children: <Widget>[
+
           Positioned(
             bottom: size.height * 0.28,
             left: 0,
