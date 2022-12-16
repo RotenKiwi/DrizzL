@@ -75,6 +75,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  freezed_annotation:
+    dependency: transitive
+    description:
+      name: freezed_annotation
+      sha256: aeac15850ef1b38ee368d4c53ba9a847e900bb2c53a4db3f6881cbb3cb684338
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.0"
   js:
     dependency: transitive
     description:
@@ -83,6 +91,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.5"
+  json_annotation:
+    dependency: transitive
+    description:
+      name: json_annotation
+      sha256: "3520fa844009431b5d4491a5a778603520cdc399ab3406332dcc50f93547258c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.7.0"
   lints:
     dependency: transitive
     description:
@@ -192,6 +208,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+  weather_animation:
+    dependency: "direct main"
+    description:
+      name: weather_animation
+      sha256: f7933f14bca02e1ba4b41d63101b04a4b7e897bd1c863cb40c701ec20d19c86a
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
 sdks:
   dart: ">=2.19.0-374.1.beta <4.0.0"
   flutter: ">=2.5.0"
