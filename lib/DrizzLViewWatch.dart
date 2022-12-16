@@ -12,13 +12,13 @@ class _DrizzLViewWatchState extends State<DrizzLViewWatch> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
             Color(0xff2f2cc7),
-            Color(0xff6f1f96),
+            Color(0xff561775),
           ],
         ),
       ),
